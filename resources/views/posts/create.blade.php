@@ -5,7 +5,12 @@
 
     <h1>Create a new Post</h1>
 
+
     <form method="post" action="/newblog/public/posts">
+
+
+        @include('layouts.errors')
+
         {{csrf_field()}}
         <div class="form-group">
             <label for="exampleInputEmail1">Title</label>
